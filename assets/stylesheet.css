@@ -9,7 +9,7 @@ body {
 }
 
 .kontakt,
-.info,
+.produkt,
 .farm {
   border-top: 5vh solid rgb(85, 85, 85);
   height: 95vh;
@@ -143,7 +143,7 @@ body {
   margin: auto auto;
 }
 
-.info {
+.produkt {
   position: sticky;
   top: 0;
   z-index: -1;
@@ -210,6 +210,17 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
+  /*LANDING*/
+
+  .bannerTxt h1 {
+    font-size: 3.75rem;
+  }
+
+  .bannerTxt p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
   /*HEADER*/
 
   .headeer {
