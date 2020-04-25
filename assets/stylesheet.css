@@ -1,0 +1,143 @@
+body{
+background-color: rgba(241, 196, 15,1);
+height: 100%;
+width: 100%;
+overflow-x: hidden;
+margin: 0 0;
+left: 0;
+top: 0;
+}
+
+
+.vidWrap  video{
+  z-index: -10;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  position: fixed;
+}
+
+
+.bannerTxt {
+  display: table;
+  margin: 0 auto;
+  padding-top: 25vh;
+  z-index: 10;
+  width: 80vw;
+}
+
+.bannerTxt h1 {
+  font-family:Lobster;
+  color: rgba(236, 240, 241,.8);
+  text-shadow: #FC0 1px 0 10px;
+  letter-spacing: 1vw;
+  display: table;
+  padding-top: 5%;
+  text-transform: uppercase;
+  font-size: 8vw;
+  margin: 0 auto;
+}
+.bannerTxt p {
+  font-family: arial;
+  text-align: center;
+  display: table;
+  color: #FFF;
+  font-size: 2vw;
+  margin: 0 auto;
+  width: 50vw;
+}
+
+.kontakt > div {
+  display: inline-block;
+  padding-left: 5vw;
+  padding-top: 5%;
+}
+.kontakt {
+  z-index: -1;
+  position: sticky;
+  text-align: center;
+  top: 0;
+  margin: 0 auto;
+  background-color: rgba(241, 196, 15, 1);
+  height: 100vh;
+  width: 100%;
+}
+.kontakt img {
+  height: 25vh;
+}
+
+.kontakt h1{
+  font-family: arial;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.kontakt h2 {
+  font-family: arial;
+  text-transform: uppercase;
+  color: #FF9;
+}
+
+
+.konJorgen, .konUnni, .konEmma{
+  margin: auto auto;
+}
+
+.info {
+  position: sticky;
+  top:0;
+  z-index: -1;
+  background-color: rgba(246, 185, 59, 1);
+  height: 115vh;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.produkt {
+  text-align: center;
+}
+
+.produkt div {
+  display: inline-block;
+  padding: 5vw;
+  width: 20vw;
+}
+
+.produkt div > img {
+  border-radius: 500px;
+  width: 100%;
+}
+
+.produkt h1 , .farm h1{
+  color: #FFF;
+  font-family: Arial;
+  text-transform: uppercase;
+  font-size: 2.5vw;
+}
+
+.produkt p, .farm p {
+  font-size: 1vw;
+  font-style: times;
+}
+
+.farm {
+  height: 110vh;
+  background-color: rgba(247, 159, 31,1.0);
+  text-align: center;
+}
+
+.farm div{
+  padding-top: 5vh;
+  margin: 0 auto;
+  text-align: center;
+  width: 90vw;
+  width: 50vw;
+}
+
+.farm img {
+  height: 30vw;
+  border-radius: 500px;
+}
