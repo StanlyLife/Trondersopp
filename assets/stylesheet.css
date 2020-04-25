@@ -129,7 +129,7 @@ body {
   margin-bottom: 2.5vh;
   font-size: 3rem;
   font-family: arial;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .kontakt p {
@@ -203,4 +203,107 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 100px;
+}
+
+.produkt-mobil {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  /*HEADER*/
+
+  .headeer {
+    width: 100vw;
+  }
+
+  .headeer ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .headeer ul li {
+    font-size: 1rem;
+
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*Produkter*/
+
+  .produkt-mobil {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .produkt-mobil .produkt1,
+  .produkt-mobil .produkt2,
+  .produkt-mobil .produkt3 {
+    background-color: #ff8c42;
+    border-top: 5vh solid rgb(85, 85, 85);
+    position: sticky;
+    z-index: -1;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .produkt-mobil div img {
+    max-height: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 500px;
+    margin-top: 5vh;
+  }
+
+  .produkt-mobil div h1,
+  .produkt-mobil div p {
+    font-family: "Lobster";
+    font-size: 4rem;
+    margin: 0 auto;
+    color: #555;
+    margin-top: 1rem;
+  }
+
+  .produkt-mobil div p {
+    color: snow;
+    font-size: 1rem;
+    margin: 0 auto;
+    width: 90vw;
+    margin-top: 2rem;
+    font-family: Arial;
+  }
+
+  .info {
+    display: none;
+  }
+
+  .produkt h1 {
+    font-size: 10rem;
+    margin-top: 0;
+  }
+
+  /*Garden*/
+
+  .farmContainter {
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+  }
+
+  .farm h1,
+  .farm p {
+    margin: 2vh auto;
+    flex: 1;
+  }
+  .farm-text-wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .info img {
+    max-width: 50vh;
+  }
 }
