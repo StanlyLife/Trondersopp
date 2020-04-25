@@ -1,0 +1,2 @@
+# Trondersopp
+Trondersopp.no
