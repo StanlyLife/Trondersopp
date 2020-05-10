@@ -48,9 +48,12 @@ body {
   font-family: Arial;
   font-size: 1.2em;
   text-transform: uppercase;
+  text-decoration: none;
+  color: snow;
+  cursor: pointer;
 }
 
-.headeer ul li a {
+/* .headeer ul li a {
   text-decoration: none;
   color: #fff;
 }
@@ -62,7 +65,7 @@ body {
 .headeer ul li a:hover {
   text-decoration: none;
   color: orange;
-}
+} */
 
 .vidWrap {
   height: 100vh;
