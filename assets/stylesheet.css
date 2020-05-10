@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgba(241, 196, 15, 1);
   height: 100%;
@@ -8,32 +12,40 @@ body {
   top: 0;
 }
 
-.kontakt,
-.produkt,
-.farm {
+#kontakt,
+#produkt,
+#farm {
   border-top: 5vh solid rgb(85, 85, 85);
-  height: 95vh;
-  /* top: 5vh !important; */
+  min-height: 95vh;
+  width: 100vw;
+  top: 0 !important;
+  position: sticky;
+  z-index: -10 !important;
 }
 
 .headeer {
-  display: inline-block;
+  display: flex;
   position: fixed;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100vw;
 }
 
 .headeer ul {
   text-align: center;
   display: inline-block;
+
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 100%;
 }
 
 .headeer ul li {
-  display: inline-block;
-}
+  width: 95%;
 
-.headeer ul li {
   font-family: Arial;
-  padding-left: 17vw;
-  margin: 0 auto;
   font-size: 1.2em;
   text-transform: uppercase;
 }
@@ -95,28 +107,27 @@ body {
   width: 50vw;
 }
 
-.kontakt > div {
+#kontakt > div {
   display: inline-block;
   padding-left: 5vw;
   padding-top: 5%;
 }
-.kontakt {
+#kontakt {
   z-index: -1;
   position: sticky;
   text-align: center;
   top: 0;
   margin: 0 auto;
   background-color: #e7b829;
-  width: 100%;
   color: rgb(224, 224, 224);
   text-shadow: 1px 1px 1px #00000033;
 }
-.kontakt img {
+#kontakt img {
   height: 35vh;
   border-radius: 500px;
 }
 
-.kontakt h1 {
+#kontakt h1 {
   font-size: 4rem;
   font-family: "lobster";
   letter-spacing: 0.05rem;
@@ -124,7 +135,7 @@ body {
   margin: 0;
 }
 
-.kontakt h2 {
+#kontakt h2 {
   margin: 0;
   margin-bottom: 2.5vh;
   font-size: 3rem;
@@ -132,7 +143,7 @@ body {
   text-transform: capitalize;
 }
 
-.kontakt p {
+#kontakt p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
 }
@@ -143,46 +154,45 @@ body {
   margin: auto auto;
 }
 
-.produkt {
+#produkt {
   position: sticky;
   top: 0;
   z-index: -1;
   background-color: rgba(246, 185, 59, 1);
-  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-.produkt {
+#produkt {
   display: flex;
   justify-content: space-evenly;
 }
 
-.produkt div {
+#produkt div {
   flex: 1;
   margin: 3rem;
 }
 
-.produkt div > img {
+#produkt div > img {
   border-radius: 500px;
-  width: 100%;
+  width: 75%;
 }
 
-.produkt h1,
-.farm h1 {
+#produkt h1,
+#farm h1 {
   color: #555;
   letter-spacing: 0.05rem;
   font-family: "Lobster";
   font-size: 2rem;
 }
 
-.produkt p,
-.farm p {
+#produkt p,
+#farm p {
   font-size: 1rem;
   font-style: times;
 }
 
-.farm {
+#farm {
   background-color: rgb(252, 177, 64);
   text-align: center;
   display: flex;
@@ -199,13 +209,14 @@ body {
   width: 90vw;
 }
 
-.farm img {
+#farm img {
+  margin-top: 5vh;
   width: 100%;
   height: 100%;
   border-radius: 100px;
 }
 
-.produkt-mobil {
+#produkt-mobil {
   display: none;
 }
 
@@ -242,14 +253,14 @@ body {
 
   /*Produkter*/
 
-  .produkt-mobil {
+  #produkt-mobil {
     display: flex;
     flex-direction: column;
   }
 
-  .produkt-mobil .produkt1,
-  .produkt-mobil .produkt2,
-  .produkt-mobil .produkt3 {
+  #produkt-mobil .produkt1,
+  #produkt-mobil .produkt2,
+  #produkt-mobil .produkt3 {
     background-color: #ff8c42;
     border-top: 5vh solid rgb(85, 85, 85);
     position: sticky;
@@ -260,16 +271,16 @@ body {
     flex-direction: column;
   }
 
-  .produkt-mobil div img {
-    max-height: 80%;
-    max-width: 80%;
+  #produkt-mobil div img {
+    max-height: 50%;
+    max-width: 50%;
     margin: 0 auto;
     border-radius: 500px;
     margin-top: 5vh;
   }
 
-  .produkt-mobil div h1,
-  .produkt-mobil div p {
+  #produkt-mobil div h1,
+  #produkt-mobil div p {
     font-family: "Lobster";
     font-size: 4rem;
     margin: 0 auto;
@@ -277,7 +288,7 @@ body {
     margin-top: 1rem;
   }
 
-  .produkt-mobil div p {
+  #produkt-mobil div p {
     color: snow;
     font-size: 1rem;
     margin: 0 auto;
@@ -286,11 +297,11 @@ body {
     font-family: Arial;
   }
 
-  .info {
+  #produkt {
     display: none;
   }
 
-  .produkt h1 {
+  #produkt h1 {
     font-size: 10rem;
     margin-top: 0;
   }
@@ -303,8 +314,8 @@ body {
     width: 90vw;
   }
 
-  .farm h1,
-  .farm p {
+  #farm h1,
+  #farm p {
     margin: 2vh auto;
     flex: 1;
   }
