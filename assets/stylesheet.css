@@ -223,15 +223,15 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
   /*LANDING*/
 
   .bannerTxt h1 {
-    font-size: 3.75rem;
+    font-size: 7rem;
   }
 
   .bannerTxt p {
-    font-size: 1.2rem;
+    font-size: 2.7rem;
     width: 100%;
   }
 
@@ -247,13 +247,22 @@ body {
   }
 
   .headeer ul li {
-    font-size: 1rem;
-
+    font-size: 2.5rem;
     flex: 1;
     margin: 0;
     padding: 0;
   }
 
+  /*Kontakt*/
+
+  #kontakt h1 {
+    font-size: 7rem;
+  }
+
+  #kontakt p {
+    font-size: 4rem;
+    color: #777;
+  }
   /*Produkter*/
 
   #produkt-mobil {
@@ -283,9 +292,9 @@ body {
   }
 
   #produkt-mobil div h1,
-  #produkt-mobil div p {
+  #produkt-mobil p {
     font-family: "Lobster";
-    font-size: 4rem;
+    font-size: 7rem;
     margin: 0 auto;
     color: #555;
     margin-top: 1rem;
@@ -293,7 +302,7 @@ body {
 
   #produkt-mobil div p {
     color: snow;
-    font-size: 1rem;
+    font-size: 3rem;
     margin: 0 auto;
     width: 90vw;
     margin-top: 2rem;
@@ -321,14 +330,9 @@ body {
   #farm p {
     margin: 2vh auto;
     flex: 1;
+    text-align: left;
   }
   .farm-text-wrapper {
     width: 100%;
-  }
-}
-
-@media only screen and (min-width: 2000px) {
-  .info img {
-    max-width: 50vh;
   }
 }

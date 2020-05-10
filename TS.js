@@ -13,11 +13,11 @@ let kontakt = document.querySelector("#kontakt");
 })();
 
 function resizeWindow() {
-  if (window.innerWidth < 901) {
+  if (window.innerWidth < 1200) {
     produktHeader.style.display = "none";
-    produktHeaderMobil.style.display = "flex";
+    produktHeaderMobil.style.display = "block";
   } else {
-    produktHeader.style.display = "flex";
+    produktHeader.style.display = "block";
     produktHeaderMobil.style.display = "none";
   }
 }
