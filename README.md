@@ -1,2 +1,5 @@
 # Trondersopp
-Trondersopp.no
+
+under development
+
+Ts.Trondersopp.no
