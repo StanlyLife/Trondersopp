@@ -13,7 +13,7 @@ let kontakt = document.querySelector("#kontakt");
 })();
 
 function resizeWindow() {
-  if (window.innerWidth < 1200) {
+  if (window.innerWidth < 990) {
     produktHeader.style.display = "none";
     produktHeaderMobil.style.display = "block";
   } else {
@@ -26,13 +26,17 @@ window.addEventListener("resize", resizeWindow);
 
 produktHeader.addEventListener("click", (e) => {
   produkt.scrollIntoView();
+  console.log(produkt);
 });
 produktHeaderMobil.addEventListener("click", (e) => {
   produktMobil.scrollIntoView();
+  console.log(produkt);
 });
 HeaderKontakt.addEventListener("click", (e) => {
   kontakt.scrollIntoView();
+  console.log(kontakt);
 });
 HeaderFarm.addEventListener("click", (e) => {
   farm.scrollIntoView();
+  console.log(farm);
 });
