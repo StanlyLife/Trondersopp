@@ -26,17 +26,18 @@ body {
 #left-top {
   left: 0;
   top: 0;
+  width: 20vw;
 }
 
 #left-bottom {
   left: 0;
   bottom: 0;
-  transform: translate(-0.5vw);
+  height: 50vh;
 }
 
 #right {
   right: 0;
   top: 0;
   bottom: 0;
-  transform: translate(10vw);
+  height: 100vh;
 }
