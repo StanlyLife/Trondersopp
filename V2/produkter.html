@@ -31,7 +31,63 @@
           alt=""
         />
         <div class="modal">
-          <div class="modal-content"></div>
+          <div class="exit">
+            <button class="modal-button-close">
+              <i class="fas fa-times-circle"></i>
+            </button>
+          </div>
+          <div class="modal-content modal-kongeosters">
+            <div class="modal-image">
+              <img src="/V2/assets/bilder/koo.jpg" alt="" />
+            </div>
+            <div class="modal-info">
+              <p>
+                Vi dyrker Kongeøster, vinterøster og shiitake, og prøver nye
+                sopper etter ønske, feks jusas øre og flamingoøsters. Dette
+                dyrkes på substrat fra nærområdet, som sagflis, korn, gips og
+                kalk. Soppen har eget vinterrom der den står i mørket uten mye
+                fukt. Så flyttes den til sommerrommet med masse lys og vann.
+                Denne prosessen tar ca 3 måneder. Så høstes soppen til
+                resturantene rundt om i landet. Soppen vil inneholde mindre vann
+                enn annen sopp ettersom det tar mye lengre tid å produsere.
+                Soppen har en mild smak med en nyans av buljong, og har
+                konsistens som kyllingkjøtt
+              </p>
+            </div>
+          </div>
+          <div class="modal-content modal-shiitake">
+            <div class="modal-image">
+              <img src="/V2/assets/bilder/shi.jpg" alt="" />
+            </div>
+            <div class="modal-info">
+              <p>
+                Vi dyrker Kongeøster, vinterøster og shiitake, og prøver nye
+                sopper etter ønske, feks jusas øre og flamingoøsters. Dette
+                dyrkes på substrat fra nærområdet, som sagflis, korn, gips og
+                kalk. Soppen har eget vinterrom der den står i mørket uten mye
+                fukt. Så flyttes den til sommerrommet med masse lys og vann.
+                Denne prosessen tar ca 3 måneder. Så høstes soppen til
+                resturantene rundt om i landet. Soppen vil inneholde mindre vann
+                enn annen sopp ettersom det tar mye lengre tid å produsere.
+                Soppen har en mild smak med en nyans av buljong, og har
+                konsistens som kyllingkjøtt
+              </p>
+            </div>
+          </div>
+          <div class="modal-content modal-soppgris">
+            <div class="modal-image">
+              <img src="/V2/assets/bilder/gris.jpg" alt="" />
+            </div>
+            <div class="modal-info">
+              <p>
+                På gården har vi ca 400 gris, og et utvalg av disse blir foret
+                på soppsubstrat og sopp som ikke kan selges videre til kunder.
+                Ettersom sopp er vanndrivende så gir det en helt spesiel smak på
+                kjøttet. Og grisen spiser dette mer enn gjerne. Kokkene får
+                velge størrelse på grisen selv- mellom 30-130kg.
+              </p>
+            </div>
+          </div>
         </div>
         <!--produkter-->
         <div class="produkter">
@@ -42,7 +98,14 @@
               </div>
               <div class="produkt-info">
                 <h1>Kongeøsters</h1>
-                <button id="produkt-k" href="">Se mer</button>
+                <button
+                  class="modal-button-open"
+                  id="produkt-k"
+                  href=""
+                  value="kongeosters"
+                >
+                  Se mer
+                </button>
               </div>
             </div>
             <div class="produkt-2">
@@ -51,7 +114,14 @@
               </div>
               <div class="produkt-info">
                 <h1>Shiitake</h1>
-                <button id="produkt-k" href="">Se mer</button>
+                <button
+                  class="modal-button-open"
+                  id="produkt-k"
+                  href=""
+                  value="shiitake"
+                >
+                  Se mer
+                </button>
               </div>
             </div>
             <div class="produkt-1">
@@ -60,11 +130,31 @@
               </div>
               <div class="produkt-info">
                 <h1>Sopp gris</h1>
-                <button id="produkt-k" href="">Se mer</button>
+                <button
+                  class="modal-button-open"
+                  id="produkt-k"
+                  href=""
+                  value="gris"
+                >
+                  Se mer
+                </button>
               </div>
             </div>
           </div>
           <!--produkt-liste slutt-->
+          <div class="info">
+            <p>
+              Vi dyrker Kongeøster, vinterøster og shiitake, og prøver nye
+              sopper etter ønske, feks judas øre og flamingoøsters. Dette dyrkes
+              på substrat fra nærområdet, som sagflis, korn, gips og kalk.
+              Soppen har eget vinterrom der den står i mørket uten mye fukt. Så
+              flyttes den til sommerrommet med masse lys og vann. Denne
+              prosessen tar ca 3 måneder. Så høstes soppen til resturantene
+              rundt om i landet. Soppen vil inneholde mindre vann enn annen sopp
+              ettersom det tar mye lengre tid å produsere. Soppen har en mild
+              smak med en nyans av buljong, og har konsistens som kyllingkjøtt
+            </p>
+          </div>
         </div>
         <!--produkter slutt-->
       </div>
@@ -75,5 +165,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="main.js"></script>
+    <script src="/V2/produkter.js"></script>
   </body>
 </html>
