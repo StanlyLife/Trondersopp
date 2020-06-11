@@ -4,8 +4,8 @@
   align-items: center;
   flex-direction: column;
 
-  max-height: 100vh;
-  max-width: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
 
 .logo {
@@ -55,4 +55,52 @@
 .link-text a:hover {
   color: #333;
   border-bottom: 2px solid #df3a00;
+}
+
+.vidWrap {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    margin: 0 auto;
+  }
+
+  .vidWrap {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -10;
+    position: absolute;
+  }
+
+  /* .vidWrap video {
+    min-width: 100vw;
+    min-height: 100vh;
+  } */
+  .logo img {
+    width: 125%;
+  }
+
+  .links {
+    width: 90vw;
+  }
+
+  .link-text a {
+    font-size: 1.25rem;
+    color: #fff;
+    flex: 1;
+  }
+
+  #right {
+    display: none;
+  }
+  #left-top {
+    display: none;
+  }
+
+  #left-bottom {
+    display: none;
+  }
 }

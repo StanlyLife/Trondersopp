@@ -47,3 +47,10 @@
   justify-content: center;
   align-items: center;
 }
+
+@media only screen and (max-width: 900px) {
+  .bilde img {
+    max-height: 30vh;
+    border-radius: 500px;
+  }
+}

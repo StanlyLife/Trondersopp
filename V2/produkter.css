@@ -131,6 +131,7 @@
 .modal-shiitake,
 .modal-kongeosters {
   display: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .modal {
@@ -143,4 +144,44 @@
   font-size: 1.1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 2vh auto;
+}
+
+@media only screen and (max-width: 1300px) {
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 90vw;
+  }
+  .info {
+    width: 80%;
+  }
+  .produkt-liste button {
+    padding: 0.5rem;
+  }
+  .produkt-liste h1 {
+    font-size: 1.5rem;
+  }
+
+  .produkt-liste img {
+    max-width: 27.5vw;
+    max-height: 25vh;
+    border-radius: 500px;
+  }
+
+  .modal-content {
+    flex-direction: column;
+    width: 95vw;
+    height: 90vh;
+  }
+
+  .modal-content img {
+    max-width: 90vw;
+    max-height: 40vh;
+    border-radius: 1rem;
+  }
+
+  .modal-content p {
+    font-size: 1.275rem;
+  }
 }
